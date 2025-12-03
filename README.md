@@ -60,13 +60,13 @@ This document provides a comprehensive gap analysis of the Cyanergy system again
 **Status:** Significant Gaps  
 **Current State:**
 - ✅ Password-based authentication
-- ❌ **Password policies NOT configured** (using default Identity settings)
-- ❌ No password complexity requirements enforced
+- ❌ Password policies rely on default Identity settings (minimum length 6, basic complexity)
+- ❌ No stronger password policy aligned with maritime/IACS requirements
 - ❌ No password expiration policy
 - ❌ No password history enforcement
 - ❌ No authenticator strength verification
 
-**Gap:** Missing comprehensive password/authenticator management  
+**Gap:** Missing comprehensive password/authenticator management and strong password policy  
 **Difficulty:** Medium - Requires Identity configuration and policy updates  
 **Action Required:**
 1. Configure strong password policies in Identity (length, complexity, unique characters).
@@ -90,12 +90,10 @@ This document provides a comprehensive gap analysis of the Cyanergy system again
 ### SR 1.7 - Strength of Passwords ⚠️ CRITICAL GAP
 **Status:** Not Configured  
 **Current State:**
-- ❌ **Password strength requirements NOT configured**
-- ❌ Using default Identity password settings (weak)
-- ❌ No minimum length enforcement
-- ❌ No complexity requirements
+- ❌ Password strength relies only on default Identity settings (minimum length 6, basic complexity)
+- ❌ No explicit strong password policy aligned with maritime/IACS requirements
 
-**Gap:** Critical - Password strength not enforced  
+**Gap:** Critical - Password strength not aligned with required standard  
 **Difficulty:** Low - Configuration change only  
 **Action Required:** **URGENT** - Configure strong password requirements in IdentityOptions
 
